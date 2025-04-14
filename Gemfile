@@ -37,6 +37,13 @@ gem 'rack-cors'
 # JWT tokens
 gem 'jwt_sessions', '~> 3.2', '>= 3.2.4'
 
+# Bussiness logic
+gem 'trailblazer-rails', '~> 2.4', '>= 2.4.4'
+
+# Validation
+gem 'reform', '>= 2.2.0'
+gem 'reform-rails'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
