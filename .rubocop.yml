@@ -1,2 +1,15 @@
+plugins:
+  - rubocop-performance
+  - rubocop-rails
+
+AllCops:
+    NewCops: enable
+
 Layout/SpaceInsideArrayLiteralBrackets:
   Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Documentation:
+  Enabled: false 
