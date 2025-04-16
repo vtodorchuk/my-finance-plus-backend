@@ -6,7 +6,7 @@ module Session
       step :create_session
 
       def validate_password(_ctx, model:, params:, **)
-        model.authenticate(params[:password_digets])
+        model.authenticate(params[:password_digest])
       end
 
       def create_session(ctx, model:, **)
