@@ -5,7 +5,7 @@ module User
            Output(:failure) => Track(:success),
            Output(:success) => End(:failure)
       step Model::Build(UserAccount, :new)
-      
+
       step Contract::Build(constant: User::Form::Create)
       step Contract::Validate()
       step Contract::Persist()
