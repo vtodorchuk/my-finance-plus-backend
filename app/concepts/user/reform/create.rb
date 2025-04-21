@@ -4,7 +4,7 @@ module User
       property :email
       property :password_digest
 
-      validates :email, :password, presence: true
+      validates :email, :password_digest, presence: true
 
       validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
       validates :password_digest, length: 6..33
