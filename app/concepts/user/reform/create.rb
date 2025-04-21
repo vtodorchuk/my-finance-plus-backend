@@ -1,8 +1,10 @@
 module User
-  module Form
+  module Reform
     class Create < Reform::Form
       property :email
       property :password_digest
+
+      validates :email, :password, presence: true
 
       validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
       validates :password_digest, length: 6..33
